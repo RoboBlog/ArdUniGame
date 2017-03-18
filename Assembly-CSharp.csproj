@@ -46,8 +46,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Joystick_Module_Test.cs" />
-     <Compile Include="Assets\Test_Serial_Monitor.cs" />
+     <Compile Include="Assets\Test_Scene\Scripts\Joystick_Module_Test.cs" />
+     <Compile Include="Assets\Test_Scene\Scripts\Test_Serial_Monitor.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
