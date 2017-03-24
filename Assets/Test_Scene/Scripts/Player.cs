@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 	public static int health = 100;
+	public static int money = 0;
 	void Start () {
 		
 	}

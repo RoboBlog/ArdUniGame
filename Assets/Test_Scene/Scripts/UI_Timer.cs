@@ -11,7 +11,7 @@ public class UI_Timer : MonoBehaviour {
 		
 	}
 	
-	// Update is called once per frame
+
 	void Update () {
 		timer += Time.deltaTime;
 		int timerint = (int)timer;

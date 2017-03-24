@@ -46,9 +46,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Menu\Menu.cs" />
+     <Compile Include="Assets\Menu\PauseMenu.cs" />
+     <Compile Include="Assets\Menu\PauseMenu_UI.cs" />
      <Compile Include="Assets\Test_Scene\Scripts\AddHealth.cs" />
      <Compile Include="Assets\Test_Scene\Scripts\Bullet.cs" />
      <Compile Include="Assets\Test_Scene\Scripts\CameraPlayerFollow.cs" />
+     <Compile Include="Assets\Test_Scene\Scripts\Coin.cs" />
      <Compile Include="Assets\Test_Scene\Scripts\Controller_Keyboard.cs" />
      <Compile Include="Assets\Test_Scene\Scripts\DeadLine.cs" />
      <Compile Include="Assets\Test_Scene\Scripts\Enemy.cs" />
@@ -59,6 +63,7 @@
      <Compile Include="Assets\Test_Scene\Scripts\Test_Serial_Monitor.cs" />
      <Compile Include="Assets\Test_Scene\Scripts\UI.cs" />
      <Compile Include="Assets\Test_Scene\Scripts\UI_Health.cs" />
+     <Compile Include="Assets\Test_Scene\Scripts\UI_Money.cs" />
      <Compile Include="Assets\Test_Scene\Scripts\UI_Timer.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
