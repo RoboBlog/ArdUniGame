@@ -60,6 +60,8 @@
      <Compile Include="Assets\Test_Scene\Scripts\OnTrigger.cs" />
      <Compile Include="Assets\Test_Scene\Scripts\Player.cs" />
      <Compile Include="Assets\Test_Scene\Scripts\Spikes.cs" />
+     <Compile Include="Assets\Test_Scene\Scripts\TeleportIn.cs" />
+     <Compile Include="Assets\Test_Scene\Scripts\TeleportOut.cs" />
      <Compile Include="Assets\Test_Scene\Scripts\Test_Serial_Monitor.cs" />
      <Compile Include="Assets\Test_Scene\Scripts\UI.cs" />
      <Compile Include="Assets\Test_Scene\Scripts\UI_Health.cs" />

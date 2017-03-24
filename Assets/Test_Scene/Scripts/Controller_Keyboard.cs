@@ -6,7 +6,7 @@ using UnityEngine;
 public class Controller_Keyboard : MonoBehaviour {
 	public GameObject bulletPrefab;
     public Transform bulletSpawn;
-	public Rigidbody2D rigi;
+	public static Rigidbody2D rigi;
 	public Rigidbody2D bullet1;
 	public float Speed=20.0f;
 	public float JumpSpeed=15000.0f;
