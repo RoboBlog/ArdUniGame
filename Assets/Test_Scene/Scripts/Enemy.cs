@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 	public Rigidbody2D rigi;
-	public int Health = 100;
+	public static int health = 100;
 	public int Damage = 10;
 	public int Speed = 10;
 	public int Amount = 30;
@@ -20,9 +20,9 @@ public class Enemy : MonoBehaviour {
 		rigi.velocity = new Vector2(Time.deltaTime*-Speed*10, rigi.velocity.y);
 		
 
-		
 
-		if(Health<=0)
+
+		if(health<=0)
 		{
 			Destroy(gameObject);
 		}
