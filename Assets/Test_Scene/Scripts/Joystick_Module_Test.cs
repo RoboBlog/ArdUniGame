@@ -19,12 +19,10 @@ public class Joystick_Module_Test : MonoBehaviour {
 
 
 	void Update () {
-
-	
  		int result = Convert.ToInt32(serial.ReadLine());
 		Debug.Log(result);
 		//Thread.Sleep(100);
-	
+
 	if(result==0)
 	{
 	
@@ -37,4 +35,5 @@ public class Joystick_Module_Test : MonoBehaviour {
 	}
 		
 	}
+
 }

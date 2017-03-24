@@ -1,6 +1,11 @@
-﻿<Properties StartupItem="ArdUniGame.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Test_Scene\Scripts\Controller_Keyboard.cs">
+    <Files>
+      <File FileName="Assets\Test_Scene\Scripts\Joystick_Module_Test.cs" Line="28" Column="15" />
+      <File FileName="Assets\Test_Scene\Scripts\Controller_Keyboard.cs" Line="17" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
