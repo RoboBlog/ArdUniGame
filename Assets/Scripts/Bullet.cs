@@ -19,6 +19,12 @@ public class Bullet : MonoBehaviour {
 		 {
 			 Destroy(gameObject);
 			 Enemy.health-=Amount;
+			 
+		 }
+		  if(other.CompareTag("Player"))//switch to all tag
+		 {
+			 Destroy(gameObject);
+			 Player.health-=Amount;
 		 }
 	}
 }

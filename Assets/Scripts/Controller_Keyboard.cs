@@ -7,7 +7,7 @@ public class Controller_Keyboard : MonoBehaviour {
 	public GameObject bulletPrefab;
     public Transform bulletSpawn;
 	public static Rigidbody2D rigi;
-	public Rigidbody2D bullet1;
+	//public Rigidbody2D bullet1;
 	public float Speed=20.0f;
 	public float JumpSpeed=15000.0f;
 	public static int a=0;
@@ -15,12 +15,13 @@ public class Controller_Keyboard : MonoBehaviour {
 	
 	void Start () {
 		rigi = GetComponent<Rigidbody2D>();
-		bullet1 = GetComponent<Rigidbody2D>();
+		//bullet1 = GetComponent<Rigidbody2D>();
 
 	}
 	
 
 	void Update () {
+			
 		if(Input.GetKey("d"))
 		{
 			if(Input.GetKeyDown("d")) rigi.rotation=(0);//fix it later
