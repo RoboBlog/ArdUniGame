@@ -49,6 +49,7 @@
      <Compile Include="Assets\Menu\Menu.cs" />
      <Compile Include="Assets\Menu\PauseMenu.cs" />
      <Compile Include="Assets\Menu\PauseMenu_UI.cs" />
+     <Compile Include="Assets\Menu\VideoSetting.cs" />
      <Compile Include="Assets\Scripts\AddHealth.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\CameraPlayerFollow.cs" />
@@ -60,6 +61,9 @@
      <Compile Include="Assets\Scripts\Ladder.cs" />
      <Compile Include="Assets\Scripts\OnTrigger.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\QualitySettings.cs" />
+     <Compile Include="Assets\Scripts\Random_Level_Generator.cs" />
+     <Compile Include="Assets\Scripts\Save.cs" />
      <Compile Include="Assets\Scripts\Spikes.cs" />
      <Compile Include="Assets\Scripts\TeleportIn.cs" />
      <Compile Include="Assets\Scripts\TeleportOut.cs" />

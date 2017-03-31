@@ -4,16 +4,35 @@ using UnityEngine;
 
 public class TeleportIn : MonoBehaviour {
 	public Vector2 myvalue;
-	void setup(){
+	private float timer = 0;
+	public Transform tipGui;
+	public float tiptimer = 3;
+	void Update(){
+	
 	
 	}
-	void OnTriggerEnter2D(Collider2D other)
+		void displayTipMessage()
 	{
-		myvalue = GameObject.Find("TeleportOut").transform.position;
-		 if(other.CompareTag("Player"))
-		 {
-			Controller_Keyboard.rigi.transform.position = myvalue;
-		 }
-		 //Add later Teleport On Click
+		
+		tipGui.gameObject.SetActive(true);
 	}
+	void OnTriggerStay2D(Collider2D other)
+	{
+		 if(other.CompareTag("Player")){
+			displayTipMessage();
+		myvalue = GameObject.Find("TeleportOut").transform.position;
+		
+		 if(Input.GetKeyDown("e")){
+		 
+			Controller_Keyboard.rigi.transform.position = myvalue;
+			 }
+			
+		 //Add later Teleport On Click
+		}
+	}
+	 void OnTriggerExit2D(Collider2D other)
+			 {
+				 tipGui.gameObject.SetActive(false);
+			 }
+
 }

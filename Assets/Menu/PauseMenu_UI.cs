@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PauseMenu_UI : MonoBehaviour {
 	public Transform menu;
+	public Transform VideoSettingsUI;
+	void setup(){
+		VideoSettingsUI.gameObject.SetActive(true);
+	}
 	public void Resume()
 	{
 			menu.gameObject.SetActive(false);
@@ -12,6 +16,13 @@ public class PauseMenu_UI : MonoBehaviour {
 
 	public void SaveExit()
 	{
-	Application.LoadLevel(0);//Load Menu
+	PlayerPrefs.SetInt("Money", 10);
 	}
+	public void VideoSettings()
+	{
+		menu.gameObject.SetActive(false);
+		VideoSettingsUI.gameObject.SetActive(true);
+
+	}
+
 }
