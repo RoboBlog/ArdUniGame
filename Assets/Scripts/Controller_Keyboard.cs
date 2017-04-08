@@ -20,7 +20,7 @@ public class Controller_Keyboard : MonoBehaviour {
 	}
 	
 
-	void Update () {
+	void FixedUpdate () {
 			
 		if(Input.GetKey("d"))
 		{
