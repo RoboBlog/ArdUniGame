@@ -2,3 +2,6 @@ sceneSetups:
 - path: Assets/Scenes/RandomMapGeneration/Test.unity
   isLoaded: 1
   isActive: 1
+- path: Assets/Scenes/Test Script/Test_scene.unity
+  isLoaded: 1
+  isActive: 0
