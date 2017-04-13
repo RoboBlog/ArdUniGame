@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\Controller_Keyboard.cs" />
      <Compile Include="Assets\Scripts\DeadLine.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\HilbertCurve.cs" />
      <Compile Include="Assets\Scripts\Joystick_Module_Test.cs" />
      <Compile Include="Assets\Scripts\Ladder.cs" />
      <Compile Include="Assets\Scripts\OnTrigger.cs" />
@@ -64,6 +65,7 @@
      <Compile Include="Assets\Scripts\QualitySettings.cs" />
      <Compile Include="Assets\Scripts\Random_Level_Generator.cs" />
      <Compile Include="Assets\Scripts\Save.cs" />
+     <Compile Include="Assets\Scripts\SimpleEnemy.cs" />
      <Compile Include="Assets\Scripts\Spikes.cs" />
      <Compile Include="Assets\Scripts\TeleportIn.cs" />
      <Compile Include="Assets\Scripts\TeleportOut.cs" />
