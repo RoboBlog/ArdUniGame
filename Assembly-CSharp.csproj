@@ -73,6 +73,8 @@
      <Compile Include="Assets\Scripts\UI_Money.cs" />
      <Compile Include="Assets\Scripts\UI_Timer.cs" />
      <Compile Include="Assets\test.cs" />
+     <None Include="Assets\Font\Lato\OFL.txt" />
+     <None Include="Assets\Font\Lato\README.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
