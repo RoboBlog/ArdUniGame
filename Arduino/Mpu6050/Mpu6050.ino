@@ -1,44 +1,34 @@
-#include <Wire.h>
-#include <MPU6050.h>
+ #include<Wire.h>
+const int MPU=0x68;  
+int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ;
+// float gyro_normalizer_factor = 1.0f / 32768.0f;
  
-MPU6050 mpu;
- 
-void setup()
-{
-  Serial.begin(115200);
- 
-  Serial.println("Inicjalizacja MPU6050");
-  while(!mpu.begin(MPU6050_SCALE_2000DPS, MPU6050_RANGE_2G))
-  {
-    Serial.println("Nie mozna znalezc MPU6050 - sprawdz polaczenie!");
-    delay(500);
-  }
- 
-  // Kalibracja żyroskopu
-  mpu.calibrateGyro();
- 
-  // Ustawienie czułości
-  mpu.setThreshold(3);
+void setup(){
+  Wire.begin();
+  Wire.beginTransmission(MPU);
+  Wire.write(0x6B); 
+  Wire.write(0);    
+  Wire.endTransmission(true);
+  Serial.begin(9600);
 }
  
-void loop()
-{
-  Vector rawGyro = mpu.readRawGyro();
-  Vector normGyro = mpu.readNormalizeGyro();
+void loop(){
+  Wire.beginTransmission(MPU);
+  Wire.write(0x3B);  //
+  Wire.endTransmission(false);
+  Wire.requestFrom(MPU,14,true);  
+  AcX=Wire.read()<<8|Wire.read();  
+  AcY=Wire.read()<<8|Wire.read(); 
+  AcZ=Wire.read()<<8|Wire.read();
+  Tmp=Wire.read()<<8|Wire.read();  
+  GyX=Wire.read()<<8|Wire.read();  
+  GyY=Wire.read()<<8|Wire.read();  
+  GyZ=Wire.read()<<8|Wire.read();  
  
-  Serial.print(" Xraw = ");
-  Serial.print(rawGyro.XAxis);
-  Serial.print(" Yraw = ");
-  Serial.print(rawGyro.YAxis);
-  Serial.print(" Zraw = ");
-  Serial.println(rawGyro.ZAxis);
+
+  Serial.print(AcX); Serial.print(";"); Serial.print(AcY); Serial.print(";"); Serial.print(AcZ); Serial.print(";");
+  Serial.print(GyX); Serial.print(";"); Serial.print(GyY); Serial.print(";"); Serial.print(GyZ); Serial.println("");
+  Serial.flush();
  
-  Serial.print(" Xnorm = ");
-  Serial.print(normGyro.XAxis);
-  Serial.print(" Ynorm = ");
-  Serial.print(normGyro.YAxis);
-  Serial.print(" Znorm = ");
-  Serial.println(normGyro.ZAxis);
- 
-  delay(500);
+  delay(25);
 }

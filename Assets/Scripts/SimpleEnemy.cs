@@ -16,7 +16,7 @@ public class SimpleEnemy: MonoBehaviour {
 	}	
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Update () {
 	//	Debug.DrawRay(right.position, Vector2.down,Color.red,0.5f);
 		RaycastHit2D hitLeft = Physics2D.Raycast (left.position, Vector2.down, 0.5f);
 		RaycastHit2D hitRight = Physics2D.Raycast (right.position, Vector2.down, 0.5f);

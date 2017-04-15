@@ -63,10 +63,13 @@
      <Compile Include="Assets\Scripts\OnTrigger.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\QualitySettings.cs" />
+     <Compile Include="Assets\Scripts\Rand.cs" />
+     <Compile Include="Assets\Scripts\RandomMapGeneration.cs" />
      <Compile Include="Assets\Scripts\Random_Level_Generator.cs" />
      <Compile Include="Assets\Scripts\Save.cs" />
      <Compile Include="Assets\Scripts\SimpleEnemy.cs" />
      <Compile Include="Assets\Scripts\Spikes.cs" />
+     <Compile Include="Assets\Scripts\SterringMPU6050.cs" />
      <Compile Include="Assets\Scripts\TeleportIn.cs" />
      <Compile Include="Assets\Scripts\TeleportOut.cs" />
      <Compile Include="Assets\Scripts\Test_Serial_Monitor.cs" />
@@ -74,7 +77,6 @@
      <Compile Include="Assets\Scripts\UI_Health.cs" />
      <Compile Include="Assets\Scripts\UI_Money.cs" />
      <Compile Include="Assets\Scripts\UI_Timer.cs" />
-     <Compile Include="Assets\test.cs" />
      <None Include="Assets\Font\Lato\OFL.txt" />
      <None Include="Assets\Font\Lato\README.txt" />
  <Reference Include="UnityEngine.UI">

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DeadLine : MonoBehaviour {
 
-	// Use this for initialization
+
 
     void OnTriggerEnter2D(Collider2D other)
    {
